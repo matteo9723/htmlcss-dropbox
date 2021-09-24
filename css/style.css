@@ -1,0 +1,231 @@
+/*********** GLOBAL **********/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container-big{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container-small{
+  width: 70%;
+  margin: 0 auto;
+}
+
+/********** NAV  *************/
+nav{
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  background-color:red;
+}
+
+/********** HEADER ***********/
+ 
+header{
+  background-color: aqua;
+  height: 200vh;
+  width: 100%;
+  padding-top: 80px;
+}
+
+/********** MAIN  **********/
+
+/* box uno  */
+
+.box.uno{
+  margin-top: 50px;
+}
+
+.box.uno .item.top{
+  background-color: blueviolet;
+  width: calc(100% / 3);
+  height: 100px;
+  float: left;
+  border: 1px solid black;
+}
+
+.box.uno .item.bottom{
+  background-color: blueviolet;
+  width: 100% ;
+  height: 100px;
+  float: left;
+  border: 1px solid black;
+}
+
+/* box due  */
+
+.box.due{
+  margin-top: 50px;
+}
+
+.box.due .item{
+  background-color: blueviolet;
+  width: 50% ;
+  height: 100px;
+  float: left;
+  border: 1px solid black;
+}
+
+/* box tre  */
+
+.box.tre{
+  margin-top: 50px;
+}
+
+.box.tre .item.top{
+  background-color: blueviolet;
+  width: calc(100% / 3);
+  height: 100px;
+  float: left;
+  border: 1px solid black;
+}
+
+.box.tre .item.bottom{
+  background-color: blueviolet;
+  width: 100% ;
+  height: 100px;
+  float: left;
+  border: 1px solid black;
+}
+
+/* box quattro  */
+
+.box.quattro{
+  margin-top: 50px;
+}
+
+.box.quattro .item.top{
+  background-color: blueviolet;
+  width: calc(100% / 3);
+  height: 100px;
+  float: left;
+  border: 1px solid black;
+}
+
+.box.quattro .item.bottom{
+  background-color: blueviolet;
+  width: 100%;
+  height: 100px;
+  float: left;
+  border: 1px solid black;
+}
+
+/* .box.quattro .item.top.left .square */
+
+.box.quattro .item.top.left .square.uno{
+  background-color: orange;
+  width: 50%;
+  height: 50px;
+  float: left;
+  border: 1px solid black;
+}
+.box.quattro .item.top.left .square.due{
+  background-color: rgb(41, 180, 36);
+  width: 50%;
+  height: 50px;
+  float: left;
+  border: 1px solid black;
+}
+.box.quattro .item.top.left .square.tre{
+  background-color: rgb(226, 25, 183);
+  width: 50%;
+  height: 50px;
+  float: left;
+  border: 1px solid black;
+}
+.box.quattro .item.top.left .square.quattro{
+  background-color: rgb(190, 205, 216);
+  width: 50%;
+  height: 50px;
+  float: left;
+  border: 1px solid black;
+}
+
+/* .box.quattro .item.top.right .square */
+
+.box.quattro .item.top.right .square.uno{
+  background-color: orange;
+  width: 50%;
+  height: 50px;
+  float: left;
+  border: 1px solid black;
+}
+.box.quattro .item.top.right .square.due{
+  background-color: rgb(41, 180, 36);
+  width: 50%;
+  height: 50px;
+  float: left;
+  border: 1px solid black;
+}
+.box.quattro .item.top.right .square.tre{
+  background-color: rgb(226, 25, 183);
+  width: 50%;
+  height: 50px;
+  float: left;
+  border: 1px solid black;
+}
+.box.quattro .item.top.right .square.quattro{
+  background-color: rgb(190, 205, 216);
+  width: 50%;
+  height: 50px;
+  float: left;
+  border: 1px solid black;
+}
+
+/* .box.quattro .item.bottom */
+
+.box.quattro .item.bottom .square.left{
+  background-color: red;
+  width: 50%;
+  height: 100px;
+  float: left;
+  border: 1px solid black;
+}
+
+.box.quattro .item.bottom .square.right{
+  background-color: blue;
+  width: 50%;
+  height: 100px;
+  float: left;
+  border: 1px solid black;
+}
+
+/* box cinque  */
+
+.box.cinque{
+  margin-top: 50px;
+}
+
+.box.cinque .item{
+  background-color: blueviolet;
+  width: 100%;
+  height: 100px;
+  border: 1px solid black;
+}
+
+/* ********FOOTER******** */
+
+footer{
+  margin-top: 50px;
+  background-color: gray;
+  width: 100%;
+  height: 500PX;
+}
+
+footer ul{
+  list-style: none;
+  display: inline-block;
+  width: 19%;
+  padding-left: 6%;
+}
