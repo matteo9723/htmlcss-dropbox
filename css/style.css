@@ -22,21 +22,144 @@
   margin: 0 auto;
 }
 
+.btn{
+  padding: 5px;
+  color: white;
+  background-color: blue;
+  display: inline-block;
+  height: 30px;
+}
+
+.btn:hover{
+  background-color: cornflowerblue;
+}
+
+.btn:active{
+  background-color: blue;
+}
+
 /********** NAV  *************/
 nav{
   position: fixed;
   height: 80px;
   width: 100%;
-  background-color:red;
+  background-color:white;
 }
+
+nav a {
+  font-size: 12px;
+  text-align: center;
+  display: block;text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  border-bottom: 2px solid black;
+}
+
+nav a:active {
+  color: red;
+}
+
+
+nav .box.left{
+  width: 450px;
+  float: left;
+  height: 80px;
+}
+
+nav .box.right {
+  width: 450px;
+  float: right;
+  height: 80px;
+}
+
+nav .box.left .item {
+  width: calc(100% / 4);
+  float: left;
+  height: 80px;
+  background-color: white;
+  line-height: 79px;
+}
+
+nav .box.left .item.uno img {
+  width: 100%;
+  padding: 0 10px;
+}
+
+nav .box.right .item {
+  float: left;
+  height: 80px;
+  line-height: 79px;
+}
+
+nav .box.right .item.uno ,nav .box.right .item.tre,nav .box.right .item.quattro{
+  width: 20%;
+}
+
+nav .box.right .item.due{
+  width: 40%;
+}
+
+nav .box.right .item.quattro {
+ position: relative;
+ line-height: normal;
+}
+
+nav .box.right .item.quattro .btn {
+  position: absolute;
+  height: 30px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%)
+}
+
+
 
 /********** HEADER ***********/
  
 header{
-  background-color: aqua;
-  height: 200vh;
+  background-color: rgb(74, 165, 165);
+  height: 86vh;
   width: 100%;
   padding-top: 80px;
+}
+
+header h1{
+  padding-top: 50px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+header .box{
+  margin-top: 20px;
+  float: left;
+}
+
+header .box.left{
+  width: 40%;
+}
+
+header .box.right{
+  width: 60%;
+}
+
+header .btn{
+  margin-top: 20px;
+}
+
+header .box.left .text{
+  padding: 10px 0;
+}
+
+header .box.left .entity-code{
+  font-size: 70px;
+  font-weight: 1000;
+}
+
+header .box.right img{
+  width: 100%;
+  
 }
 
 /********** MAIN  **********/
