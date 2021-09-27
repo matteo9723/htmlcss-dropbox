@@ -83,6 +83,7 @@ nav{
   height: 80px;
   width: 100%;
   background-color:white;
+  z-index: 999;
 }
 
 nav a {
@@ -253,7 +254,7 @@ main .checkbox span{
   width: calc(100% - 20px);
 }
 
-.box.uno .item.top .content h4,h3,.row{
+.box.uno .item.top .content h4,.box.uno .item.top .content h3,.box.uno .item.top .content .row{
   margin-bottom: 20px;
 }
 
@@ -364,11 +365,29 @@ main .checkbox span{
 }
 
 .box.tre .item.top{
-  background-color: blueviolet;
-  width: calc(100% / 3);
-  height: 100px;
+  margin-top: 30px;
+  width: calc(100% / 3 - 20px);
+  min-height: 100px;
   float: left;
-  border: 1px solid black;
+}
+
+.box.tre .item.top:nth-of-type(2){
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.box.tre .item.top:nth-of-type(5){
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+
+.box.tre .item.top img{
+  width: 100%;
+}
+
+.box.tre .item.top p a {
+  color: black;
 }
 
 .box.tre .item.bottom{
@@ -379,106 +398,218 @@ main .checkbox span{
   border: 1px solid black;
 }
 
+
+
 /* box quattro  */
 
 .box.quattro{
   margin-top: 50px;
 }
 
+.box.quattro .container-small h2:first-child{
+  padding-right: 600px;
+}
+
+.box.quattro .container-small h2:last-child{
+  padding-right: 100px;
+  color: purple;
+}
+
+.box.quattro .container-small a{
+  color: blue;
+  padding: 20px 0;
+  display: block;
+}
+
 .box.quattro .item.top{
-  background-color: blueviolet;
+  background-color: lightgray;
   width: calc(100% / 3);
-  height: 100px;
+  height: 30vw;
   float: left;
-  border: 1px solid black;
 }
 
 .box.quattro .item.bottom{
-  background-color: blueviolet;
+  background-color: lightskyblue;
   width: 100%;
-  height: 100px;
+  min-height: 300px;
   float: left;
-  border: 1px solid black;
 }
 
 /* .box.quattro .item.top.left .square */
 
 .box.quattro .item.top.left .square.uno{
-  background-color: orange;
-  width: 50%;
-  height: 50px;
+  height: 15vw;
+  width: 15vw;
+  position: relative;
   float: left;
-  border: 1px solid black;
+  background-color: lightgreen;
 }
+.box.quattro .item.top.left .square.uno img{
+  filter: invert(1);
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .box.quattro .item.top.left .square.due{
-  background-color: rgb(41, 180, 36);
-  width: 50%;
-  height: 50px;
+  height: 15vw;
+  width: 15vw;
+  position: relative;
   float: left;
-  border: 1px solid black;
+  background-color: purple;
 }
+
+.box.quattro .item.top.left .square.due img{
+  filter: invert(1);
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .box.quattro .item.top.left .square.tre{
-  background-color: rgb(226, 25, 183);
-  width: 50%;
-  height: 50px;
+  height: 15vw;
+  width: 15vw;
+  position: relative;
   float: left;
-  border: 1px solid black;
+  background-color: lightseagreen;
 }
+
+.box.quattro .item.top.left .square.tre img{
+  filter: invert(1);
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .box.quattro .item.top.left .square.quattro{
-  background-color: rgb(190, 205, 216);
-  width: 50%;
-  height: 50px;
+  height: 15vw;
+  width: 15vw;
+  position: relative;
   float: left;
-  border: 1px solid black;
+  background-color: red;
 }
+
+.box.quattro .item.top.left .square.quattro img{
+  filter: invert(1);
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* .box.quattro .item.top.center */
+
+.box.quattro .item.top.center img{
+  width: 30%;
+ margin: 20px 0;
+}
+
+.box.quattro .item.top.center .border{
+  width: 50px;
+ border: 1px solid grey;
+}
+
+.box.quattro .item.top.center p{
+ margin: 20px 0;
+}
+
 
 /* .box.quattro .item.top.right .square */
 
 .box.quattro .item.top.right .square.uno{
-  background-color: orange;
-  width: 50%;
-  height: 50px;
-  float: left;
-  border: 1px solid black;
+  height: 15vw;
+  width: 15vw;
+  position: relative;
+  float: right;
+  background-color: red;
 }
+
+.box.quattro .item.top.right .square.uno img{
+  filter: invert(1);
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .box.quattro .item.top.right .square.due{
-  background-color: rgb(41, 180, 36);
-  width: 50%;
-  height: 50px;
-  float: left;
-  border: 1px solid black;
+  height: 15vw;
+  width: 15vw;
+  position: relative;
+  float: right;
+  background-color: lightskyblue;
 }
+
+.box.quattro .item.top.right .square.due img{
+  filter: invert(1);
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .box.quattro .item.top.right .square.tre{
-  background-color: rgb(226, 25, 183);
-  width: 50%;
-  height: 50px;
-  float: left;
-  border: 1px solid black;
+  height: 15vw;
+  width: 15vw;
+  position: relative;
+  float: right;
+  background-color: blue;
 }
-.box.quattro .item.top.right .square.quattro{
-  background-color: rgb(190, 205, 216);
+
+.box.quattro .item.top.right .square.tre img{
+  filter: invert(1);
   width: 50%;
-  height: 50px;
-  float: left;
-  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box.quattro .item.top.right .square.quattro{
+  height: 15vw;
+  width: 15vw;
+  position: relative;
+  float: right;
+  background-color: yellow
+}
+
+.box.quattro .item.top.right .square.quattro img{
+  filter: invert(1);
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* .box.quattro .item.bottom */
 
 .box.quattro .item.bottom .square.left{
-  background-color: red;
   width: 50%;
-  height: 100px;
+  min-height: 300px;
   float: left;
-  border: 1px solid black;
 }
 
 .box.quattro .item.bottom .square.right{
-  background-color: blue;
   width: 50%;
-  height: 100px;
+  min-height: 300px;
   float: left;
-  border: 1px solid black;
+  
+}
+
+.box.quattro .item.bottom .square.right .btn-light{
+ margin-top: 120px;
+ padding: 5px 20px;
+ margin-left: 50px;
 }
 
 /* box cinque  */
@@ -488,19 +619,40 @@ main .checkbox span{
 }
 
 .box.cinque .item{
-  background-color: blueviolet;
   width: 100%;
-  height: 100px;
-  border: 1px solid black;
+  min-height: 300px;
+}
+
+.box.cinque .item h3{
+  line-height: 80px;
+}
+
+.box.cinque .item .row {
+  line-height: 60px; 
+  border-top: 1px solid lightgray;  
+}
+
+.box.cinque .item .row:last-child {
+  border-bottom:1px solid lightgray ;  
+}
+
+.box.cinque .item .row h4{
+  float: left;
+}
+
+.box.cinque .item .row i{
+  line-height: 60px;
+  margin-right: 30px;
+  float: right;
 }
 
 /* ********FOOTER******** */
 
 footer{
   margin-top: 50px;
-  background-color: gray;
+  background-color: black;
   width: 100%;
-  height: 500PX;
+  min-height: 300px;
 }
 
 footer ul{
@@ -508,4 +660,18 @@ footer ul{
   display: inline-block;
   width: 19%;
   padding-left: 6%;
+  padding-top: 80px;
 }
+
+footer ul li{
+  color: white;
+  line-height: 25px;
+}
+
+footer ul li:first-child{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+
