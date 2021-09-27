@@ -6,6 +6,26 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+p{
+  font-size: 15px;
+ 
+}
+
+h1{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 35px;
+  font-weight: bold;
+}
+
+h3{
+  font-size: 25px;
+  font-weight: bold;
+}
+
 .clearfix::after{
   content: "";
   display: table;
@@ -13,12 +33,12 @@
 }
 
 .container-big{
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
 .container-small{
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -36,6 +56,25 @@
 
 .btn:active{
   background-color: blue;
+}
+
+.btn-light{
+  padding: 5px;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  display: inline-block;
+  height: 30px;
+}
+
+.btn-light:hover{
+  background-color: rgba(0, 0,0, .8);
+  color: white;
+}
+
+.btn-light:active{
+  background-color: white;
+  color: black;
 }
 
 /********** NAV  *************/
@@ -127,8 +166,6 @@ header{
 
 header h1{
   padding-top: 50px;
-  font-size: 50px;
-  font-weight: bold;
 }
 
 header .box{
@@ -164,40 +201,160 @@ header .box.right img{
 
 /********** MAIN  **********/
 
+main h2{
+  margin-top: 100px;
+}
+
+main .checkbox{
+  margin: 40px 0;
+}
+
+main .checkbox span{
+  margin-right: 20px ;
+}
+
 /* box uno  */
 
 .box.uno{
   margin-top: 50px;
 }
 
+
 .box.uno .item.top{
-  background-color: blueviolet;
-  width: calc(100% / 3);
-  height: 100px;
+  width: calc(100% / 3 - 10px);
+  min-height: 1100px;
   float: left;
-  border: 1px solid black;
+  border: 1px solid lightgray;
 }
 
-.box.uno .item.bottom{
-  background-color: blueviolet;
-  width: 100% ;
-  height: 100px;
+.box.uno .item.top:nth-of-type(3){
+ margin:0 15px;
+}
+
+.box.uno .item.top .title{
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.box.uno .item.top .content{
+  padding:  20px;
+}
+
+.box.uno .item.top .content .row i,p{
   float: left;
-  border: 1px solid black;
+}
+
+.box.uno .item.top .content .row i{
+  width: 20px;
+}
+
+.box.uno .item.top .content .row p{
+  width: calc(100% - 20px);
+}
+
+.box.uno .item.top .content h4,h3,.row{
+  margin-bottom: 20px;
+}
+
+.box.uno .item.top .content h4:last-of-type{
+  margin-top: 50px;
+}
+
+.box.uno .item.top .content .costo{
+  margin-bottom: 50px;
+  color: gray;
+  font-size: 13px;
+}
+
+.box.uno .item.top .content .btn{
+  margin: 20px auto;
+  text-align: center;
+  width: 100%;
+}
+
+.box.uno .item.top .content .acquista-ora span{
+  line-height: 80px;
+  display: inline-block;
+  border-bottom: 1px solid lightgray;
+}
+
+.box.uno .item.top .content .acquista-ora a{
+  color: blue;
+}
+
+.fas.fa-check{
+  color: rgb(28, 137, 201);
+  position: relative;
+}
+
+.fas.fa-user .fas.fa-plus{
+  position: absolute;
+  font-size: 8px;
+  padding-top:3px ;
+  transform: translate(-10%);
+}
+
+/* .box.uno .item.bottom */
+
+.box.uno .item.bottom{
+  width: 100% ;
+  float: left;
+  border: 1px solid lightgray;
+  margin-top: 30px;
+}
+
+.box.uno .item.bottom .title{
+ text-align: center;
+ padding:  10px 0;
+ border-bottom: 1px solid lightgray;
+}
+
+.box.uno .item.bottom .content{
+  padding: 20px;
+}
+
+.box.uno .item.bottom .content.left{
+  float: left;
+  width: 70%;
+}
+
+.box.uno .item.bottom .content.left p{
+  padding-top: 20px;
+  
+}
+
+.box.uno .item.bottom .content.right{
+  float: left;
+  width: 30%;
+}
+
+.box.uno .item.bottom .content.right .btn{
+  width: 100%;
+  text-align: center;
 }
 
 /* box due  */
 
 .box.due{
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .box.due .item{
-  background-color: blueviolet;
   width: 50% ;
-  height: 100px;
   float: left;
-  border: 1px solid black;
+}
+
+.box.due .item.left img{
+  width: 100% ;
+}
+
+.box.due .item.right { 
+  padding: 40px;
+}
+
+.box.due .item.right .btn-light{ 
+  margin-top: 20px;
 }
 
 /* box tre  */
